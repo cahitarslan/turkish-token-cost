@@ -1,35 +1,46 @@
-[Türkçe](README.md) | **English**
+# turkish-token-cost
 
-# Does asking in Turkish cost more tokens?
+[Türkçe](README.md)
 
-The same content in English and Turkish, counted with AI model tokenizers. Ratio = Turkish tokens / English tokens.
+How many tokens do AI models count when the same content is written in Turkish, and how much more does it cost than English? This repository measures it.
 
-## Result (2026-11-25)
+Post: [Asking AI in Turkish costs 70 percent more](https://cahitarslan.com/en/blog/turkish-token-cost/)
 
-| Tokenizer | FLORES-200 | Business texts |
-|---|--:|--:|
-| Claude Haiku 4.5 | 1.94 | 1.95 |
-| OpenAI cl100k_base (GPT-4) | 1.92 | 1.92 |
-| Claude 5.x (Haiku 5.5, Sonnet 5.5, Opus 5.5, Fable 5.2) | 1.70 | 1.73 |
-| OpenAI o200k_base (GPT-4o and later) | 1.43 | 1.41 |
+## Result (25 November 2026)
 
-The same content in Turkish takes about 70% more tokens on Claude 5.x models. Details: [results/2026-11-25/report.md](results/2026-11-25/report.md).
+FLORES-200 devtest: 1,012 sentences translated from English to Turkish by professional translators. Ratio is Turkish tokens divided by English tokens for the same content.
 
-## Data
+| Tokenizer | English tokens | Turkish tokens | Ratio | Extra for Turkish |
+|---|--:|--:|--:|--:|
+| Claude Haiku 4.5 | 29,894 | 58,028 | 1.94 | 94% |
+| OpenAI cl100k_base (GPT-4) | 27,187 | 52,209 | 1.92 | 92% |
+| Claude Haiku 5.5, Sonnet 5.5, Opus 5.5, Fable 5.2 | 42,927 | 72,950 | 1.70 | 70% |
+| OpenAI o200k_base (GPT-4o and later) | 26,878 | 38,445 | 1.43 | 43% |
 
-- `data/flores/`: FLORES-200 devtest, English and Turkish, 1,012 sentences ([CC BY-SA 4.0](data/flores/README.md)).
-- `data/business.json`: 24 short business texts (support replies, e-mails, product and invoice text) written in both languages for this test.
+On 24 short business texts written in both languages for this test (support replies, e-mails, product and invoice text) the result points the same way: 73% for the new Claude models, 95% for Haiku 4.5, 41% for GPT-4o.
 
-## Run
+Claude's newer tokenizer also splits English into smaller pieces (4.45 characters per token on Haiku 4.5, 3.10 on the new models). So compare models by dollar cost, not by token count. Full table: [results/2026-11-25/report.md](results/2026-11-25/report.md).
 
-```
+## How it works
+
+- `data/flores/`: FLORES-200 devtest English and Turkish files, aligned line by line.
+- `data/business.json`: 24 short business texts in both languages.
+- OpenAI tokenizers (`o200k_base`, `cl100k_base`) are counted offline and exactly with Microsoft.ML.Tokenizers.
+- Anthropic does not publish its tokenizer. Claude counts come from Anthropic's free token-counting endpoint. The endpoint adds a few tokens for the message framing; that overhead is measured once with a one-letter message and subtracted.
+- Each corpus is counted as one text (how a long prompt is billed). For the short texts every text is also counted on its own to show the spread of the ratio.
+
+## Running it
+
+Requires .NET 10.
+
+```bash
 dotnet test TokenCost.slnx
-dotnet run --project src/TokenCost -- offline      # OpenAI tokenizers only, no API key needed
-dotnet run --project src/TokenCost -- run          # also Anthropic's free token-counting endpoint, needs ANTHROPIC_API_KEY
+dotnet run --project src/TokenCost -- offline          # OpenAI tokenizers only, no key needed
+ANTHROPIC_API_KEY=... dotnet run --project src/TokenCost -- run   # includes Claude; counting is free, nothing is generated
 ```
 
-Anthropic does not publish its tokenizer, so Claude counts come from the free token-counting endpoint; no messages are generated and nothing is billed.
+Results are written to `results/<date>/` as `results.json` and `report.md`.
 
 ## License
 
-Code: MIT. FLORES-200 data: CC BY-SA 4.0 (Meta / NLLB Team).
+Code is MIT. FLORES-200 data is CC BY-SA 4.0 ([data/flores/README.md](data/flores/README.md)).
