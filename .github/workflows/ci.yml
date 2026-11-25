@@ -1,0 +1,16 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - run: dotnet test TokenCost.slnx
+      # The offline tokenizers need no API key; this checks the data files and the report end to end.
+      - run: dotnet run --project src/TokenCost -- offline --out results/ci

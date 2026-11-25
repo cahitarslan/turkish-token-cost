@@ -1,0 +1,423 @@
+{
+  "measuredAt": "2026-11-25T20:04:43.4484033Z",
+  "results": [
+    {
+      "corpus": "flores",
+      "counter": "claude-haiku-5-5",
+      "english": {
+        "tokens": 42927,
+        "stats": {
+          "characters": 132977,
+          "words": 21901,
+          "bytes": 133107
+        },
+        "charsPerToken": 3.0977473385049037,
+        "tokensPerWord": 1.9600474864161455
+      },
+      "turkish": {
+        "tokens": 72950,
+        "stats": {
+          "characters": 136772,
+          "words": 17609,
+          "bytes": 148907
+        },
+        "charsPerToken": 1.874873200822481,
+        "tokensPerWord": 4.142767902776989
+      },
+      "perItem": null,
+      "ratio": 1.6993966501269597
+    },
+    {
+      "corpus": "flores",
+      "counter": "claude-sonnet-5-5",
+      "english": {
+        "tokens": 42927,
+        "stats": {
+          "characters": 132977,
+          "words": 21901,
+          "bytes": 133107
+        },
+        "charsPerToken": 3.0977473385049037,
+        "tokensPerWord": 1.9600474864161455
+      },
+      "turkish": {
+        "tokens": 72950,
+        "stats": {
+          "characters": 136772,
+          "words": 17609,
+          "bytes": 148907
+        },
+        "charsPerToken": 1.874873200822481,
+        "tokensPerWord": 4.142767902776989
+      },
+      "perItem": null,
+      "ratio": 1.6993966501269597
+    },
+    {
+      "corpus": "flores",
+      "counter": "claude-opus-5-5",
+      "english": {
+        "tokens": 42927,
+        "stats": {
+          "characters": 132977,
+          "words": 21901,
+          "bytes": 133107
+        },
+        "charsPerToken": 3.0977473385049037,
+        "tokensPerWord": 1.9600474864161455
+      },
+      "turkish": {
+        "tokens": 72950,
+        "stats": {
+          "characters": 136772,
+          "words": 17609,
+          "bytes": 148907
+        },
+        "charsPerToken": 1.874873200822481,
+        "tokensPerWord": 4.142767902776989
+      },
+      "perItem": null,
+      "ratio": 1.6993966501269597
+    },
+    {
+      "corpus": "flores",
+      "counter": "claude-fable-5-2",
+      "english": {
+        "tokens": 42927,
+        "stats": {
+          "characters": 132977,
+          "words": 21901,
+          "bytes": 133107
+        },
+        "charsPerToken": 3.0977473385049037,
+        "tokensPerWord": 1.9600474864161455
+      },
+      "turkish": {
+        "tokens": 72950,
+        "stats": {
+          "characters": 136772,
+          "words": 17609,
+          "bytes": 148907
+        },
+        "charsPerToken": 1.874873200822481,
+        "tokensPerWord": 4.142767902776989
+      },
+      "perItem": null,
+      "ratio": 1.6993966501269597
+    },
+    {
+      "corpus": "flores",
+      "counter": "claude-haiku-4-5",
+      "english": {
+        "tokens": 29894,
+        "stats": {
+          "characters": 132977,
+          "words": 21901,
+          "bytes": 133107
+        },
+        "charsPerToken": 4.448283936575901,
+        "tokensPerWord": 1.3649605040865713
+      },
+      "turkish": {
+        "tokens": 58028,
+        "stats": {
+          "characters": 136772,
+          "words": 17609,
+          "bytes": 148907
+        },
+        "charsPerToken": 2.3570000689322397,
+        "tokensPerWord": 3.2953603271054575
+      },
+      "perItem": null,
+      "ratio": 1.9411253094266407
+    },
+    {
+      "corpus": "flores",
+      "counter": "openai-o200k_base",
+      "english": {
+        "tokens": 26878,
+        "stats": {
+          "characters": 132977,
+          "words": 21901,
+          "bytes": 133107
+        },
+        "charsPerToken": 4.947429124190788,
+        "tokensPerWord": 1.227249897264965
+      },
+      "turkish": {
+        "tokens": 38445,
+        "stats": {
+          "characters": 136772,
+          "words": 17609,
+          "bytes": 148907
+        },
+        "charsPerToken": 3.557601768760567,
+        "tokensPerWord": 2.183258560963144
+      },
+      "perItem": {
+        "min": 0.8157894736842105,
+        "p25": 1.2857142857142858,
+        "median": 1.4166666666666667,
+        "p75": 1.588235294117647,
+        "max": 2.4545454545454546
+      },
+      "ratio": 1.4303519607113624
+    },
+    {
+      "corpus": "flores",
+      "counter": "openai-cl100k_base",
+      "english": {
+        "tokens": 27187,
+        "stats": {
+          "characters": 132977,
+          "words": 21901,
+          "bytes": 133107
+        },
+        "charsPerToken": 4.89119799904366,
+        "tokensPerWord": 1.2413588420620063
+      },
+      "turkish": {
+        "tokens": 52209,
+        "stats": {
+          "characters": 136772,
+          "words": 17609,
+          "bytes": 148907
+        },
+        "charsPerToken": 2.619701584018081,
+        "tokensPerWord": 2.9649043102958714
+      },
+      "perItem": {
+        "min": 1,
+        "p25": 1.696969696969697,
+        "median": 1.9130434782608696,
+        "p75": 2.16,
+        "max": 3.5714285714285716
+      },
+      "ratio": 1.9203663515650862
+    },
+    {
+      "corpus": "business",
+      "counter": "claude-haiku-5-5",
+      "english": {
+        "tokens": 859,
+        "stats": {
+          "characters": 2752,
+          "words": 479,
+          "bytes": 2752
+        },
+        "charsPerToken": 3.2037252619324796,
+        "tokensPerWord": 1.7933194154488519
+      },
+      "turkish": {
+        "tokens": 1488,
+        "stats": {
+          "characters": 2757,
+          "words": 369,
+          "bytes": 2990
+        },
+        "charsPerToken": 1.8528225806451613,
+        "tokensPerWord": 4.032520325203252
+      },
+      "perItem": {
+        "min": 1.36,
+        "p25": 1.59375,
+        "median": 1.793103448275862,
+        "p75": 1.8918918918918919,
+        "max": 2.5714285714285716
+      },
+      "ratio": 1.7322467986030268
+    },
+    {
+      "corpus": "business",
+      "counter": "claude-sonnet-5-5",
+      "english": {
+        "tokens": 859,
+        "stats": {
+          "characters": 2752,
+          "words": 479,
+          "bytes": 2752
+        },
+        "charsPerToken": 3.2037252619324796,
+        "tokensPerWord": 1.7933194154488519
+      },
+      "turkish": {
+        "tokens": 1488,
+        "stats": {
+          "characters": 2757,
+          "words": 369,
+          "bytes": 2990
+        },
+        "charsPerToken": 1.8528225806451613,
+        "tokensPerWord": 4.032520325203252
+      },
+      "perItem": {
+        "min": 1.36,
+        "p25": 1.59375,
+        "median": 1.793103448275862,
+        "p75": 1.8918918918918919,
+        "max": 2.5714285714285716
+      },
+      "ratio": 1.7322467986030268
+    },
+    {
+      "corpus": "business",
+      "counter": "claude-opus-5-5",
+      "english": {
+        "tokens": 859,
+        "stats": {
+          "characters": 2752,
+          "words": 479,
+          "bytes": 2752
+        },
+        "charsPerToken": 3.2037252619324796,
+        "tokensPerWord": 1.7933194154488519
+      },
+      "turkish": {
+        "tokens": 1488,
+        "stats": {
+          "characters": 2757,
+          "words": 369,
+          "bytes": 2990
+        },
+        "charsPerToken": 1.8528225806451613,
+        "tokensPerWord": 4.032520325203252
+      },
+      "perItem": {
+        "min": 1.36,
+        "p25": 1.59375,
+        "median": 1.793103448275862,
+        "p75": 1.8918918918918919,
+        "max": 2.5714285714285716
+      },
+      "ratio": 1.7322467986030268
+    },
+    {
+      "corpus": "business",
+      "counter": "claude-fable-5-2",
+      "english": {
+        "tokens": 859,
+        "stats": {
+          "characters": 2752,
+          "words": 479,
+          "bytes": 2752
+        },
+        "charsPerToken": 3.2037252619324796,
+        "tokensPerWord": 1.7933194154488519
+      },
+      "turkish": {
+        "tokens": 1488,
+        "stats": {
+          "characters": 2757,
+          "words": 369,
+          "bytes": 2990
+        },
+        "charsPerToken": 1.8528225806451613,
+        "tokensPerWord": 4.032520325203252
+      },
+      "perItem": {
+        "min": 1.36,
+        "p25": 1.59375,
+        "median": 1.793103448275862,
+        "p75": 1.8918918918918919,
+        "max": 2.5714285714285716
+      },
+      "ratio": 1.7322467986030268
+    },
+    {
+      "corpus": "business",
+      "counter": "claude-haiku-4-5",
+      "english": {
+        "tokens": 621,
+        "stats": {
+          "characters": 2752,
+          "words": 479,
+          "bytes": 2752
+        },
+        "charsPerToken": 4.431561996779388,
+        "tokensPerWord": 1.2964509394572026
+      },
+      "turkish": {
+        "tokens": 1209,
+        "stats": {
+          "characters": 2757,
+          "words": 369,
+          "bytes": 2990
+        },
+        "charsPerToken": 2.2803970223325063,
+        "tokensPerWord": 3.2764227642276422
+      },
+      "perItem": {
+        "min": 1.5555555555555556,
+        "p25": 1.8181818181818181,
+        "median": 2.064516129032258,
+        "p75": 2.1481481481481484,
+        "max": 2.3333333333333335
+      },
+      "ratio": 1.9468599033816425
+    },
+    {
+      "corpus": "business",
+      "counter": "openai-o200k_base",
+      "english": {
+        "tokens": 559,
+        "stats": {
+          "characters": 2752,
+          "words": 479,
+          "bytes": 2752
+        },
+        "charsPerToken": 4.923076923076923,
+        "tokensPerWord": 1.1670146137787056
+      },
+      "turkish": {
+        "tokens": 786,
+        "stats": {
+          "characters": 2757,
+          "words": 369,
+          "bytes": 2990
+        },
+        "charsPerToken": 3.5076335877862594,
+        "tokensPerWord": 2.130081300813008
+      },
+      "perItem": {
+        "min": 1.1538461538461537,
+        "p25": 1.263157894736842,
+        "median": 1.375,
+        "p75": 1.5,
+        "max": 1.95
+      },
+      "ratio": 1.4060822898032201
+    },
+    {
+      "corpus": "business",
+      "counter": "openai-cl100k_base",
+      "english": {
+        "tokens": 562,
+        "stats": {
+          "characters": 2752,
+          "words": 479,
+          "bytes": 2752
+        },
+        "charsPerToken": 4.896797153024911,
+        "tokensPerWord": 1.173277661795407
+      },
+      "turkish": {
+        "tokens": 1079,
+        "stats": {
+          "characters": 2757,
+          "words": 369,
+          "bytes": 2990
+        },
+        "charsPerToken": 2.555143651529194,
+        "tokensPerWord": 2.924119241192412
+      },
+      "perItem": {
+        "min": 1.6,
+        "p25": 1.72,
+        "median": 1.9523809523809523,
+        "p75": 2.1,
+        "max": 2.2962962962962963
+      },
+      "ratio": 1.9199288256227758
+    }
+  ]
+}

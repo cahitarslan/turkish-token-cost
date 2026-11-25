@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/TokenCost/TokenCost.csproj" />
+  <Project Path="tests/TokenCost.Tests/TokenCost.Tests.csproj" />
+</Solution>
